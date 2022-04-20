@@ -12,7 +12,7 @@ https://www.w3schools.com/bootstrap4/bootstrap_templates.asp
 Data visualisations were developed using Processing.
 The data set was created by collecting clothing labels from my classmates.
 I created the data info on google sheets.
-I am trying to explore how interaction with information in various ways helps us to have more of a grasp on how we live within'hyper-objects'. 
+I am trying to explore how interaction with information in various ways can helps individuals to have more of a grasp on how we live within'hyper-objects' or systems. 
 
 Geovisualisations we created with illustrator, made into an 'interaction' using javascript events and 'onclick'.
 This was a work around after realising unfolding library has not been undated for Processing 4.0.
