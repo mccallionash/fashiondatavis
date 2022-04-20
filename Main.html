@@ -68,14 +68,16 @@
     <div class="col-sm-8">
       <h2>Design v Manufacture Locations</h2>
       <h5>Click the button below to switch from design to manufacture geovisualisation.</h5>
-        <div> 
+          <div> 
+            function hideImage() {
+            document.getElementById('loadingImage').style.display = 'none';
+             }
+       <input type="button" value="TURN ON" onclick="showImage();" />
+       <input type="button" value="TURN OFF" onclick="hideImage();" />
+       <img id="loadingImage" src="/resources/Design_Geovisualisation.png" style="display:none" />
 
-         <input type="button" value="Design Distribution"
-               onclick= showimage(img src="/resources/Design_Geovisualisation.png") >
-
-        <input type="button" value="Manufacture Distribution"
-               onclick= showimage(img src="/resources/Manufacturer_Geovisualisation.png")>
-</div>
+            <!--from https://stackoverflow.com/questions/58208036/display-image-onclick-with-a-button-->
+       </div>
       
 </div>
 
