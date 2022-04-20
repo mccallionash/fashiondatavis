@@ -17,7 +17,7 @@
 </head>
 <body>
 
-<!--
+<!-- looks better without this header
 <div class="jumbotron text-center" style="margin-bottom:0">
   <h1>Fashion Label Data</h1>
   <p>Learing interactive data visualisation using Processing</p> 
@@ -41,38 +41,17 @@
 </nav>
 
 <div class="container" style="margin-top:30px">
-  <div class="row">
-    <div class="col-sm-4">
-      <h2>Clothing Label Data Project</h2>
-      <h5>Learning interactive data visualisation using Processing</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h3>Some Links</h3>
-      <p>Lorem ipsum dolor sit ame.</p>
-      <ul class="nav nav-pills flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <hr class="d-sm-none">
-    </div>
     <div class="col-sm-8">
       <h2>Design v Manufacture Locations</h2>
       <h5>Click the button below to switch from design to manufacture geovisualisation.</h5>
-    <div> 
+     
+        <div> 
+            <!--code below uses javascript to switch between images using click button input-->
             <p>
-        <img alt="" src="/resources/Design_Geovisualisation.png" 
-            style="height: 85px; width: 198px" id="image" /></p>
+        <img alt="Geovisualisation" src="/resources/Design_Geovisualisation.png" 
+            style="height: auto; max-width: 100%;" id="image" /></p>
           <p>
+              <!--calling functions & creating functions to create interaction &ndsp=nonbreakingspace-->
         <input id="Button1" type="button" value="Design Distribution" onclick="ShowRedo()" />&nbsp;&nbsp; 
         <input id="Button2" type="button" value="Manufacture Distribution" onclick="ShowUndo()" /></p>
 
@@ -85,24 +64,33 @@
         document.getElementById("image").src = "/resources/Manufacturer_Geovisualisation.png"; 
     }
 </script>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
        </div>
-      
-</div>
-
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <br>
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     </div>
   </div>
-</div>
+      
+        <!--Trial runs that didn't work out but want to come back to:
+            <div><button onclick="myFunction()">Click me</button>
+            <img class="img-fluid" src="/resources/Design_Geovisualisation.png" alt="Brand Geovisualisation">
+            <p id="madeIn" <p> //this works if want to display this text after a button click
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <p>A Project by Aisling McCallion</p>
-</div>
+            <script>
+            function myFunction() {
+            document.getElementById("madeIn").innerHTML="/resources/Manufacturer_Geovisualisation.png";
+            }
+            </script> //trying to make the image interactive in a small way//retry with dif approach-->
+        
+        <!--function showImage() {
+         document.getElementById('loadingImage').style.display = 'block';
+           }  
+
+         <input type="button" value="Design Distribution"
+               onclick= showimage(img src="/resources/Design_Geovisualisation.png") >
+
+         <input type="button" value="Manufacture Distribution"
+               onclick= showimage(img src="/resources/Manufacturer_Geovisualisation.png")>
+          
+         from https://stackoverflow.com/questions/58208036/display-image-onclick-with-a-button-->-->
 
 </body>
 </html>
