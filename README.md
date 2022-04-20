@@ -14,6 +14,12 @@ The data set was created by collecting clothing labels from my classmates.
 I created the data info on google sheets.
 I am trying to explore how interaction with information in various ways helps us to have more of a grasp on how we live within'hyper-objects'. 
 
+Geovisualisations we created with illustrator, made into an 'interaction' using javascript events and 'onclick'.
+This was a work around after realising unfolding library has not been undated for Processing 4.0.
+The sample code for the button onclick change image can be found here:
+http://interestingwebs.blogspot.com/2012/09/change-image-onclick-with-javascript.html
+I have started to look at how to use python, folium and jupyter notebook to make fully interactive geovisualisations.
+
 
 
 
